@@ -31,63 +31,58 @@
     <dl>
       <dt><b> 1:git init</b></dt>
       <dd>-- to add a new repositry</dd>
-      <dt><b>2: ls -lart</b></dt>
-      <dd>--Show all hidden files</dd>
-      <dt><b>3: git status</b></dt>
+      <dt><b>2: git status</b></dt>
       <dd>--to show which files are being tracked</dd>
-      <dt><b>4: git add index.html</b></dt>
+      <dt><b>3: git add index.html</b></dt>
       <dd>--to add a file for being tracked</dd>
+      <dt><b>3: git add -A</b></dt>
+      <dd>--to add all files under track</dd>
       <dt><b>5: git commit</b></dt>
-      <dd>-- to save the file (we always need a initial commit )</dd>
+      <dd>-- to save the file </dd>
       <dt><b>6: git commit -m "message"</b></dt>
       <dd>--shorthand for above process</dd>
-      <dt><b>7: git add -A</b></dt>
-      <dd>-- to add all files under track</dd>
+      <dt><b>7: git commit  -a -m "message"</b></dt>
+      <dd>-- to sikp add command</dd>
 	    <br /><br />
       <dt><b>8:git restore filename</b></dt>
       <dd>--to restore files (it will match with previous commit)</dd>
       <dt><b>8:git checkout filename</b></dt>
       <dd>--to restore files (it will match with previous commit)</dd>
       <dt><b>9: git checkout -f</b></dt>
-      <dd>--restore all deleted files</dd>
-	  <dt><b>:: git push</b></dt>
+      <dd>--it will match all files with previous commit</dd>
+	  <dt><b>10: git push [remote] [branch] </b></dt>
       <dd>--push to remote repo</dd>
-	  <dt><b>:: git pull</b></dt>
-      <dd>-- Clone Repository into new Directory</dd>
-      <dt><b>10: git log </b>&nbsp;&nbsp; q to quit</dt>
+	  <dt><b>11: git pull [remote] [branch]</b></dt>
+      <dd>-- pull changes from remote repo</dd>
+      <dt><b>12: git log </b>&nbsp;&nbsp; q to quit</dt>
       <dd>--to check previous all commits</dd>
-      <dt><b>11: git log -p</b> &nbsp;&nbsp;</dt>
+      <dt><b>13: git log -p</b> &nbsp;&nbsp;</dt>
       <dd>-- to check previous  comitts and coz of -p it will show changes also</dd>
-      <dt><b>11: git log --stat</b> &nbsp;&nbsp;</dt>
+      <dt><b>14: git log --stat</b> &nbsp;&nbsp;</dt>
       <dd>-- to check previous  comitts and coz of --stat will show changes in files konsi file update hui</dd>
-      <dt><b>11: git show commit_id</b> &nbsp;&nbsp;</dt>
+      <dt><b>15: git show commit_id</b> &nbsp;&nbsp;</dt>
       <dd>-- show particular commit me changes</dd>
-      <dt><b>11: git log -p -2</b> &nbsp;&nbsp;-2 any no.</dt>
+      <dt><b>16: git log -p -2</b> &nbsp;&nbsp;-2 any no.</dt>
       <dd>-- to check previous 2 comitts</dd>  <br /><br />
-      <dt><b>12: git diff</b></dt>
+      <dt><b>17: git diff</b></dt>
       <dd>
         -- to check diference between workspace and git add -A (staging area)
       </dd>
-      <dt><b>13: git diff --staged</b></dt>
+      <dt><b>18: git diff --staged</b></dt>
       <dd>--to compare staging area with last commit</dd>
-      <dt><b>14: git commit -a -m "skipped staging area"</b></dt>
-      <dd>--to skip staging area</dd>
-      <dt><b>15: git rm --cached waste.html</b></dt>
+      <dt><b>19: git rm --cached fileName</b></dt>
       <dd>-- to remove file from stagingarea to untrack</dd>
-      <dt><b>16:git rm waste.html </b></dt>
+      <dt><b>20:git rm fileName </b></dt>
       <dd>---TO remove file completly</dd>
-      <dt><b>17: git status -s</b></dt>
+      <dt><b>21: git status -s</b></dt>
       <dd>--shorthand summary</dd>
     </dl>
     <h3>Git Ignore</h3>
     <p>
-      <b>1: </b> create a new file .gitignore and write the names of ignore
-      files into it <br />
-      <b>2: </b> it wil also ignore mylogs.log in other directories also <br />
-      <b>3: </b>if u want mylogs.log file should not be ignored in other
-      directory then write /mylogs.log in .gitignore <br />
-      <b>4: *.log</b> --to ignore all log files <br />
-      <b>5: hello/</b> --to ignore hello folder
+      <b>Ex: </b> <br />
+      <b> car.log</b> --to ignore this file <br />
+      <b> *.log</b> --to ignore all log files <br />
+      <b> hello/</b> --to ignore hello folder
     </p>
     <h3>Branches</h3>
     <pre>
@@ -100,7 +95,6 @@
 	  
 	  <b>git switch master<b/>--to switch b\w branches
 	  <b>git switch -c branch<b/>-- to create a new branch and switch to it
-	  <b>git switch -</b>-- to switch to master
 	  
 	  <b>git branch -d filename</b>  -- to delete a local branch
 	  <b>git push origin --delete branch_name</b> -- to delete a branch from remote repo
